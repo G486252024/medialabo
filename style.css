@@ -12,5 +12,5 @@ h1 {
 
 h2 {
     border-bottom: solid rgb(0, 0, 80);
-    border-left-width: 10ex solid rgb(0, 0, 80);
+    border-left: 10px solid rgb(0, 0, 80);
 }
