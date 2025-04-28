@@ -14,3 +14,14 @@ h2 {
     border-bottom: solid rgb(0, 0, 80);
     border-left: 10px solid rgb(0, 0, 80);
 }
+
+a:link {
+    color: rgb(72, 141, 251);
+}
+a:visited {
+    color: rgb(0, 0, 80);
+}
+
+a:hover {
+    color:  rgb(175, 204, 255);
+}
