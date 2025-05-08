@@ -18,8 +18,10 @@ h2 {
 a:link {
     color: rgb(72, 141, 251);
 }
+
 a:visited {
     color: rgb(0, 0, 80);
+    text-decoration: none;
 }
 
 a:hover {
