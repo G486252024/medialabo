@@ -18,6 +18,15 @@ function print(data) {
   console.log(data.list.g1[1].act);
 }
 
+function greeting() {
+  let  val= document.querySelector('input[name="genre"]').value;
+  console.log('チャンネル: '+val);
+  let i = document.querySelector('input[name="kensaku"]').value;
+  console.log('ジャンル: '+i);
+}
+let b = document.querySelector('button#print');
+b.addEventListener('click', greeting); 
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
