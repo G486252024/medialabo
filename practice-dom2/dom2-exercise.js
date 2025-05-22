@@ -20,7 +20,7 @@ b = document.querySelector('button#show');
 b.addEventListener('click', show);
 
 function show() {
-let u = document.querySelector('h2#addr') 
+let u = document.querySelector('h2#addr');
 l = document.createElement('p'); 
 u.insertAdjacentElement('afterend',l); 
 l.textContent = campus.address; 
