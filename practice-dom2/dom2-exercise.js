@@ -28,9 +28,9 @@ l.textContent = campus.address;
 let p = document.querySelector('h2#dept');
 u = document.createElement('ul');
 p.insertAdjacentElement('afterend', u);
-for (let n2 of gakka){
+for (let n of gakka){
 	l = document.createElement('li');
 	u.insertAdjacentElement('beforeend', l);
-	l.textContent = n2.name;
+	l.textContent = n.name;
 }
 }
