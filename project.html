@@ -12,18 +12,30 @@
             <label for="name">チャンネル： </label>
             <input type="radio" name="genre" id="genreg1" value="g1">
 	          <label for="genreg1">NHK総合</label>
-        </div>
-        <div>
 	          <input type="radio" name="genre" id="genree1" value="e1">
 	          <label for="genree1">Eテレ</label>
         </div>
         <div>
           <label for="name">ジャンル: </label>
-          <input type="text" name="kensaku" id="kensaku">
+          <select name="kensaku" id="kensaku">
+            <option value="">ジャンルを選択してください</option>
+            <option value="0000">ニュース・報道</option>
+            <option value="0100">スポーツ</option>
+            <option value="0205">情報・ワイドショー</option>
+            <option value="0300">ドラマ</option>
+            <option value="0409">音楽</option>
+            <option value="0502">バラエティ</option>
+            <option value="0600">映画</option>
+            <option value="0700">アニメ</option>
+            <option value="0800">ドキュメンタリー・教養</option>
+            <option value="0903">劇場・公演</option>
+            <option value="1000">趣味・教育</option>
+            <option value="1100 ">福祉</option>
+          </select>
           <button id="print">検索</button>
           <p id="message"></p>
         </div>
-         
+
         <table>
             <caption>
                 NHK の番組表

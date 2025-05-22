@@ -19,13 +19,22 @@ function print(data) {
 }
 
 function greeting() {
-  let  val= document.querySelector('input[name="genre"]').value;
-  console.log('チャンネル: '+val);
-  let i = document.querySelector('input[name="kensaku"]').value;
-  console.log('ジャンル: '+i);
+  let gen = document.querySelectorAll('input[name="genre"]');
+  for (let r of gen) {
+    if (r.checked) {
+      console.log('チャンネル: '+r.value);
+    }
+  }
+  let s = document.querySelector('select#kensaku');
+  let idx = s.selectedIndex;
+  let os = s.querySelectorAll('option');
+  let o = os.item(idx);
+  console.log('ジャンル: ' + o.getAttribute('value') + ' ' + o.textContent);
 }
+
 let b = document.querySelector('button#print');
 b.addEventListener('click', greeting); 
+
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
