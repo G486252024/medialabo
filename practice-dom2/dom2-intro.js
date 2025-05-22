@@ -15,10 +15,10 @@ let i = document.querySelector('img#bluemoon');
 i.setAttribute('src', 'bluemoon.jpg');
 
 let a = document.createElement('a');
-a.textContent = '拓殖大学HP';
-a.setAttribute('href', 'https://www.takushoku-u.ac.jp');
 let p = document.querySelector('p#takudai');
 p.insertAdjacentElement('afterend', a);
+a.textContent = '拓殖大学HP';
+a.setAttribute('href', 'https://www.takushoku-u.ac.jp');
 
 l = document.querySelector('li#mochi');
 l.remove(); 
