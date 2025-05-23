@@ -1,3 +1,20 @@
+function greeting() {
+  let gen = document.querySelectorAll('input[name="genre"]');
+  for (let r of gen) {
+    if (r.checked) {
+      console.log('チャンネル: '+r.value);
+    }
+  }
+  let s = document.querySelector('select#kensaku');
+  let idx = s.selectedIndex;
+  let os = s.querySelectorAll('option');
+  let o = os.item(idx);
+  console.log('ジャンル: ' + o.getAttribute('value') + ' ' + o.textContent);
+}
+
+let b = document.querySelector('button#print');
+b.addEventListener('click', greeting); 
+
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
@@ -18,27 +35,54 @@ function print(data) {
   console.log(data.list.g1[1].act);
 }
 
-function greeting() {
-  let gen = document.querySelectorAll('input[name="genre"]');
-  for (let r of gen) {
-    if (r.checked) {
-      console.log('チャンネル: '+r.value);
-    }
-  }
-  let s = document.querySelector('select#kensaku');
-  let idx = s.selectedIndex;
-  let os = s.querySelectorAll('option');
-  let o = os.item(idx);
-  console.log('ジャンル: ' + o.getAttribute('value') + ' ' + o.textContent);
-}
-
-let b = document.querySelector('button#print');
-b.addEventListener('click', greeting); 
-
-
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let u = document.querySelector('body');
+  let l = document.createElement('div'); 
+  l.setAttribute('id', 'result');
+  u.insertAdjacentElement('beforeend',l); 
+  l.textContent = data.list.g1[0].start_time;
+  u = document.querySelector('div#result');
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l); 
+  l.textContent = data.list.g1[0].end_time; 
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[0].service.name;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[0].title;
+  l = document.createElement('div');  
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[0].subtitle;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[0].content;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[0].act;
 
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].start_time;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].end_time; 
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].service.name;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].title;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].subtitle;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].content;
+  l = document.createElement('div'); 
+  u.insertAdjacentElement('beforeend',l);
+  l.textContent = data.list.g1[1].act;
 }
 
 // 課題5-1 のイベントハンドラの定義
