@@ -14,16 +14,6 @@ function print(data) {
 // 課題5-1 の関数 printDom() はここに記述すること
 let h;
 function printDom(data) {
-  let k = document.querySelector('div#result'); 
-  if (k != null){ 
-  k.remove();
-  }
-
-  k = document.querySelector('p#message'); 
-  if (k != null){ 
-  k.remove();
-  }
-
   let u = document.querySelector('body');
   let l = document.createElement('div'); 
   l.setAttribute('id', 'result');
@@ -67,6 +57,15 @@ c.addEventListener('click', sendRequest);
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 let r,a,s,idx,os,o;
 function sendRequest() {
+  let k = document.querySelector('div#result'); 
+  if (k != null){ 
+  k.remove();
+  }
+  k = document.querySelector('p#message'); 
+  if (k != null){ 
+  k.remove();
+  }
+
   let gen = document.querySelectorAll('input[name="genre"]');
   for (r of gen) {
     if (r.checked) {
