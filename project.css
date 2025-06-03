@@ -55,19 +55,12 @@ table {
     padding: 20px;
     border: solid 3px White;
   }
- 
-div#result div {
-  background-color: rgb(205, 128, 205);
-}
-
-div#result :nth-child(21-n+30) {
-  background-color: #ffd0ff;
-}
   
-thead tr {
+  thead tr {
     color: white;
     background-color: rgb(98, 0, 98);
-}
+  }
+
 
 div#result {
   padding-left: 3px;
@@ -75,4 +68,109 @@ div#result {
   grid-template-columns:164px 164px 96px 236px 237px 266px 237px;
   grid-auto-rows: minmax(100px, auto);
   gap: 4px 4px;
+}
+
+/* ループ処理の仕方がわからなかった　*/
+
+div#result :nth-child(-n+7){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+8) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+15){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+22) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+29){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+36) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+43){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+50) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+57){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+64) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+71){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+78) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+85){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+92) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+99){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+106) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+113){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+120) {
+  background-color: #ffd0ff;
+}
+div#result :nth-child(n+127){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+134) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+141){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+148) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+155){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+162) {
+  background-color: #ffd0ff;
+}
+
+div#result :nth-child(n+169){
+  background-color: rgb(205, 128, 205);
+}
+
+div#result :nth-child(n+176) {
+  background-color: #ffd0ff;
 }
