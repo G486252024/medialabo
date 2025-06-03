@@ -24,15 +24,15 @@ table {
   }
   
   thead th:nth-child(1) {
-    width: 20%;
+    width: 22%;
   }
   
   thead th:nth-child(2) {
-    width: 20%;
+    width: 22%;
   }
   
   thead th:nth-child(3) {
-    width: 15%;
+    width: 10%;
   }
   
   thead th:nth-child(4) {
@@ -44,27 +44,35 @@ table {
   }
   
   thead th:nth-child(6) {
-    width: 35%;
+    width: 40%;
   }
   
   thead th:nth-child(7) {
     width: 35%;
   }
 
-  th,td {
+  th {
     padding: 20px;
     border: solid 3px White;
   }
-
-tbody tr:nth-child(odd) {
-    background-color: rgb(205, 128, 205);
+ 
+div#result div {
+  background-color: rgb(205, 128, 205);
 }
-  
-tbody tr:nth-child(even) {
-    background-color: #ffd0ff;
+
+div#result :nth-child(21-n+30) {
+  background-color: #ffd0ff;
 }
   
 thead tr {
     color: white;
     background-color: rgb(98, 0, 98);
+}
+
+div#result {
+  padding-left: 3px;
+  display: grid;
+  grid-template-columns:164px 164px 96px 236px 237px 266px 237px;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 4px 4px;
 }

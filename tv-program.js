@@ -19,7 +19,6 @@ function printDom(data) {
   l.setAttribute('id', 'result');
   u.insertAdjacentElement('beforeend',l); 
   u = document.querySelector('div#result'); 
-
   if(a === "g1"){
     h = data.list.g1;
   }else{
@@ -55,15 +54,16 @@ let c = document.querySelector('button#print');
 c.addEventListener('click', sendRequest);
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
-let r,a,s,idx,os,o;
+let k,r,a,s,idx,os,o;
 function sendRequest() {
-  let k = document.querySelector('div#result'); 
+  k = document.querySelector('div#result'); 
   if (k != null){ 
-  k.remove();
+    k.remove();
   }
+
   k = document.querySelector('p#message'); 
   if (k != null){ 
-  k.remove();
+    k.remove();
   }
 
   let gen = document.querySelectorAll('input[name="genre"]');
